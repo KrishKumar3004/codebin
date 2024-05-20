@@ -1,0 +1,11 @@
+<form [formGroup]="loginForm">
+    <h2>Please Login</h2>
+    <input type="email" [formControl]="email" placeholder="Please enter your email" />
+    <span [hidden]="email.valid || email.untouched">Please enter a valid email</span>
+    <input type="password" [formControl]="password" placeholder="Please enter your password" />
+    <span [hidden]="password.valid || password.untouched">Password is required and must be atleast 6 characters
+        long</span>
+    <button [disabled]="email.invalid || password.invalid" (click)="login()">Log In</button>
+    <button (click)="reset()">Reset</button>
+
+</form>

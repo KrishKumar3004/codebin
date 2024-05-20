@@ -1,0 +1,11 @@
+<form [formGroup]="createBin">
+    <h2>Create Code Bin</h2>
+    <input type="text" [formControl]="title" placeholder="Please enter the title" />
+    <span [hidden]="title.valid || title.untouched">Please enter a valid title</span>
+    <textarea type="text" [formControl]="code" placeholder="Please enter the code snippet"> </textarea>
+    <span [hidden]="code.valid || code.untouched">Code is required
+        long</span>
+    <button [disabled]="title.invalid || code.invalid" (click)="save()">Save</button>
+
+
+</form>

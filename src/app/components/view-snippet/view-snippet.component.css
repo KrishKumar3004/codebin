@@ -1,0 +1,44 @@
+div {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+pre {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1em;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    /* Allows wrapping of code */
+    margin-top: 10px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Optional: Add styles for code syntax highlighting */
+pre code {
+    color: #f8f8f2;
+}
+
+pre code .keyword {
+    color: #66d9ef;
+}
+
+pre code .string {
+    color: #a6e22e;
+}
+
+pre code .comment {
+    color: #75715e;
+    font-style: italic;
+}
